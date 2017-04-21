@@ -10,8 +10,8 @@ export default React.createClass({
             <button className="money_button">Give Jeremy Money</button>
             <button className="gold_button">Give Jeremy Gold</button>
           </div>
-          <video id="player" src="/styles/moto_movie.mp4" controls autoPlay></video>
-          <video id="player" src="/styles/moto_movie.mp4" controls autoPlay></video>
+          <video id="player" src="/styles/movie.mp4" controls autoPlay></video>
+          <video id="player" src="/styles/movie.mp4" controls autoPlay></video>
         </div>
       </div>
     )
