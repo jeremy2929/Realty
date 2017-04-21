@@ -150,12 +150,33 @@ nav {
 }
 
 .nav_content_right {
+  display: inline-flex;
+  /*border: solid 2px;*/
   color: white;
-  margin-left: 10em;
-  height: 50%;
-  padding-top: 1em;
-  width: 50%;
+  list-style: none;
+  margin-left: 5em;
+  margin-top: 0;
+  height: 5em;
+  /*padding-top: 1em;*/
+  width: 70%;
 }
+
+.nav_options{
+  /*border: solid 1px;*/
+  display: inline-block;
+  color: white;
+  height: 102%;
+  padding: 2em;
+  text-decoration: none;
+}
+
+.nav_options:hover{
+  background-color: white;
+  /*font-size: 3em;*/
+  color: black;
+  transition: .5s;
+}
+
 
 .fixed {
   position: fixed;

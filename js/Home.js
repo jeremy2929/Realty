@@ -48,7 +48,28 @@ export default React.createClass({
             <p className="nav_content_left">First Last</p>
           </article>
           <article className="nav_right">
-            <p className="nav_content_right">HOME SERVICES ABOUT CONTACT</p>
+              <ul className="nav_content_right">
+                <li>
+                  <a className="nav_options" href="#">
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a className="nav_options" href="#">
+                    SERVICES
+                  </a>
+                </li>
+                <li>
+                  <a className="nav_options" href="#">
+                    ABOUT
+                    </a>
+                </li>
+                <li>
+                  <a className="nav_options" href="#">
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
           </article>
         </nav>
         <div className="page2_wrapper_content">
