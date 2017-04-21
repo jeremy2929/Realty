@@ -12,15 +12,18 @@ $(document).ready(function() {
     if ($(window).scrollTop() > aboveHeight){
       // if yes, add “fixed” class to the <nav>
       // add padding top to the #content  (value is same as the height of the nav)
-      $('nav').addClass('fixed')
-      $('text').addClass('nav_placeholder_grow')
+      $(".nav_wrapper").addClass('fixed')
+      $('.nav_placeholder').addClass('nav_placeholder_grow')
+      $('.page2_wrapper_content').css('margin-top','10em')
     } else {
       // when scroll up or less than aboveHeight,    remove the “fixed” class, and the padding-top
-      $('nav').removeClass('fixed')
-      $('text').removeClass('nav_placeholder_grow')
+      $(".nav_wrapper").removeClass('fixed')
+      $('.nav_placeholder').removeClass('nav_placeholder_grow')
+      $('.page2_wrapper_content').css('margin-top','5em')
     }
   })
 })
+
 
 export default React.createClass({
   render(){
@@ -29,7 +32,7 @@ export default React.createClass({
       <div className="outer-container">
         <div className="inner-container">
           <div className="video-overlay">
-          <h1 className="main_title">SA Realty Website!</h1>
+          <h1 className="main_title">First Last</h1>
             <button className="left_button">A Button</button>
             <button className="right_button">B Button</button>
           </div>
@@ -37,17 +40,38 @@ export default React.createClass({
         </div>
       </div>
 
-      <div className="wrapper">
-        <text className="nav_placeholder">
-        </text>
-        <nav>
-          <p className="nav_content">Navigation Content</p>
+      <div className="page2_wrapper">
+        <article className="nav_placeholder"></article>
+
+        <nav className="nav_wrapper">
+          <article className="nav_left">
+            <p className="nav_content_left">First Last</p>
+          </article>
+          <article className="nav_right">
+            <p className="nav_content_right">HOME SERVICES ABOUT CONTACT</p>
+          </article>
         </nav>
-        <section>
+        <div className="page2_wrapper_content">
+          <div className="page2_left_area">
+            <h1 className="page2_name_title">First Last</h1>
+            <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div className="empty_box">Empty #1</div>
+            <div className="empty_box">Empty #2</div>
+
+
+        </div>
+        <aside className="page2_right_area">
+          <h1 className="page2_name_title">Other Stuff</h1>
           <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+          <div className="empty_box">Empty #1</div>
+          <div className="empty_box">Empty #2</div>
+      </aside>
+
+        </div>
       </div>
 
     </div>
