@@ -3,66 +3,63 @@
 }
 
 body{
+  height: 120em;
+  width: 100%;
+  margin: 0;
 }
-/*
-.home_page{
-  border: solid 2px;
-  height: 20em;
-  width: 20em;
-}*/
-
 
 #background-video{
-
-height: 100%;
-width: 100%;
-float: left;
-top: 0;
-padding: none;
-position: fixed; // optional depending on what you want
+  height: 70%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed; // optional depending on what you want
 }
 
-.main_movie{
-  z-index: -1;
-}
-
-.main_title{
+.main_title {
+  border: solid 1px;
+  height: 2em;
   top: 10em;
   left: 10em;
-  z-index: 1;
+  padding: .5em;
 }
 
 .outer-container {
-    border: 1px dotted black;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  border: 1px dotted black;
+  width: 100%;
+  height: 40em;
+  margin-bottom: 0;
+  text-align: center;
 }
+
 .inner-container {
-    border: 1px solid black;
-    display: inline-block;
-    position: relative;
+  border: 1px solid black;
+  display: inline-block;
+  height: 112;
+  position: relative;
+  margin-bottom: 0;
+  margin: 0;
 }
 
 .video-overlay {
-  border: solid 2px;
-    position: absolute;
-    left: 6em;
-    top: 5em;
-    margin: 10px;
-    padding: 5px 5px;
-    font-size: 2em;
-    font-family: Helvetica;
-    color: #FFF;
-    background-color: rgba(50, 50, 50, 0.3);
+  position: absolute;
+  left: 12em;
+  top: 5em;
+  margin: 10px;
+  padding: 5px 5px;
+  font-size: 2em;
+  font-family: Helvetica;
+  color: #FFF;
+  background-color: rgba(50, 50, 50, 0.3);
 }
 
 video {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.money_button{
+.left_button{
   background-color: Transparent;
   border: solid white 2px;
   color: white;
@@ -70,10 +67,52 @@ video {
   width: 10em;
 }
 
-.gold_button{
- background-color: Transparent;
- border: solid white 2px;
- color: white;
- height: 4em;
- width: 10em;
+.right_button{
+  background-color: Transparent;
+  border: solid white 2px;
+  color: white;
+  height: 4em;
+  margin-left: 1em;
+  width: 10em;
 }
+
+/* nav bar start----------------*/
+#wrapper {
+  height: 20em;
+  width: 100%x;
+}
+
+header {
+  text-align:center;
+}
+
+.nav_placeholder{
+  margin-top: 10em;
+}
+
+.nav_placeholder_grow{
+  margin-top: 20em;
+}
+
+nav {
+  background: lightgrey;
+  height: 82px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.nav_content {
+  margin: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.text {
+  margin: 0;
+}
+/* nav bar stop----------------*/
