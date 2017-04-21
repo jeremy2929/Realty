@@ -4,12 +4,12 @@
 
 body{
 }
-
+/*
 .home_page{
   border: solid 2px;
   height: 20em;
   width: 20em;
-}
+}*/
 
 
 #background-video{
@@ -19,9 +19,7 @@ width: 100%;
 float: left;
 top: 0;
 padding: none;
-/*position: fixed; // optional depending on what you want*/
-
-
+position: fixed; // optional depending on what you want
 }
 
 .main_movie{
@@ -58,6 +56,7 @@ padding: none;
     color: #FFF;
     background-color: rgba(50, 50, 50, 0.3);
 }
+
 video {
     width: 100%;
     height: 100%;
