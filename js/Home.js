@@ -7,7 +7,7 @@ $(document).ready(function() {
   //Calculate the height of <header>
   //Use outerHeight() instead of height() if have padding
   var aboveHeight = $('header').outerHeight();
-  var aboveHeight = 640
+  var aboveHeight = 623
   //when scroll
   $(window).scroll(function(){
     //if scrolled down more than the header’s height
@@ -38,7 +38,7 @@ export default React.createClass({
             <button className="left_button">A Button</button>
             <button className="right_button">B Button</button>
           </div>
-          <video id="player" src="/styles/movie.mp4" autoPlay></video>
+          <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
         </div>
       </div>
       <Page_Two/>
