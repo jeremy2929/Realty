@@ -283,6 +283,15 @@ nav {
   text-indent: 1em;
 }
 
+.page2_contact_text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 1em;
+  /*white-space: pre;*/
+  width: 13em;
+}
+
 .page2_image_box{
   background-color: lightgrey;
   border: groove 2px;
@@ -290,7 +299,7 @@ nav {
   display: inline-block;
   height: 10em;
   margin-left: 2em;
-  margin-top: 1em;
+  margin-top: 3em;
   margin-bottom: 2em;
   width: 10em;
 }
@@ -311,7 +320,8 @@ nav {
 
 .page2_contact_area {
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 100%;
   text-align: center;
 }
