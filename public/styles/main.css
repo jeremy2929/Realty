@@ -3,7 +3,7 @@
 }
 
 body{
-  height: 120em;
+  height: 140em;
   width: 100%;
   margin: 0;
 }
@@ -19,6 +19,7 @@ body{
 
 .main_title {
   border: solid 1px;
+  font-family: 'Comfortaa', sans-serif;
   height: 2em;
   top: 10em;
   left: 10em;
@@ -143,10 +144,14 @@ nav {
 
 .nav_content_left {
   color: white;
-  margin-left: 10em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  margin: 0;
   height: 50%;
-  padding-top: 1em;
-  width: 50%;
+  padding-top: .5em;
+  text-align: center;
+  width: 100%;
+  white-space: pre;
 }
 
 .nav_content_right {
@@ -154,7 +159,7 @@ nav {
   /*border: solid 2px;*/
   color: white;
   list-style: none;
-  margin-left: 5em;
+  margin-left: 4em;
   margin-top: 0;
   height: 5em;
   /*padding-top: 1em;*/
@@ -201,6 +206,7 @@ nav {
 
 .page2_name_title{
   color: teal;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   margin: 0 auto;
   margin-bottom: 1em;
