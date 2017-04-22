@@ -196,7 +196,7 @@ nav {
   padding: 0;
   padding-top: .4em;
   text-align: center;
-  width: 30%;
+  width: 50%;
   white-space: pre;
 }
 
@@ -269,7 +269,7 @@ nav {
 .page2_name_title{
   color: teal;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   margin: 0 auto;
   margin-bottom: 1em;
   text-align: center;
