@@ -59,7 +59,7 @@ export default React.createClass({
           <img className="page2_image_box" src="/styles/house2.jpg"/>
         </section>
         <aside className="page2_right_area">
-          <h1 className="page2_name_title">Contact me</h1>
+          <h1 className="page2_name_title">All City Real Estate</h1>
           <p className="page2_contact_text">
                                     210-884-5873
                                     jrramirez65@gmail.com
