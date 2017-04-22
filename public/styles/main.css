@@ -286,10 +286,9 @@ nav {
 .page2_contact_text{
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 1em;
-  /*white-space: pre;*/
-  width: 13em;
+  width: 10em;
 }
 
 .page2_image_box{
@@ -301,7 +300,7 @@ nav {
   margin-left: 2em;
   margin-top: 3em;
   margin-bottom: 2em;
-  width: 10em;
+  width: 12em;
 }
 
 .page2_right_area{
