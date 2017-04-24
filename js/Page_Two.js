@@ -1,11 +1,9 @@
 import React from "react"
 import { Link } from "react-router"
+import Services from './Services'
+import AboutMe from './AboutMe'
 
 export default React.createClass({
-  onClickServices(){
-    this.refs.services.className="services_window_display"
-    this.refs.page2.className="page2_wrapper_content_hidden"
-  },
   render(){
   return (
     <div id="Page2" className="page2_wrapper">
@@ -27,15 +25,10 @@ export default React.createClass({
                 </a>
               </li>
               <li>
-                <a className="nav_options" href="#" onClick={this.onClickServices}>
-                  SERVICES
-                </a>
-
+                <Link to="/Services" className="nav_options">SERVICES</Link>
               </li>
               <li>
-                <a className="nav_options" href="#">
-                  ABOUT
-                </a>
+                <Link to="/AboutMe" className="nav_options">About Me</Link>
               </li>
               <li>
                 <a className="nav_options" href="#">
@@ -45,10 +38,6 @@ export default React.createClass({
             </ul>
         </article>
       </nav>
-        <div className="services_window_hidden" ref="services">
-          <p className="services_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
       <div className="page2_wrapper_content" ref="page2">
         <section className="page2_left_area">
           <h1 className="page2_name_title">Johnny Ramirez</h1>
@@ -77,6 +66,11 @@ export default React.createClass({
           </div>
         </aside>
       </div>
+        <div id="Services" className="services_window_hidden" ref="services">
+          <article className="nav_placeholder"></article>
+          <p className="services_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
     </div>
   )
 }

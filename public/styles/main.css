@@ -233,8 +233,8 @@ nav {
 .services_window_display{
   background-color: lightgrey;
   display: inline-block;
-  top: 5em;
-  left: 20em;
+  top: 0;
+  left: 0;
   height: 40em;
   width: 100%;
   z-index: 100;

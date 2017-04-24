@@ -2,6 +2,7 @@ import React from 'react'
 import $ from 'jquery'
 import Page_Two from './Page_Two'
 
+
 $(document).ready(function() {
   //Calculate the height of <header>
   //Use outerHeight() instead of height() if have padding
@@ -28,7 +29,7 @@ $(document).ready(function() {
 export default React.createClass({
   DownClick(){
     var element = document.getElementById("Page2")
-    var alignWithTop = true
+    // var alignWithTop = true
     element.scrollIntoView({behavior: "smooth"})
   },
   render(){
