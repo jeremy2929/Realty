@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router"
-import Services from './Services'
-import AboutMe from './AboutMe'
+// import Services from './Services'
+// import AboutMe from './AboutMe'
 
 export default React.createClass({
   render(){
@@ -28,7 +28,7 @@ export default React.createClass({
                 <Link to="/Services" className="nav_options">SERVICES</Link>
               </li>
               <li>
-                <Link to="/AboutMe" className="nav_options">About Me</Link>
+                <Link to="/AboutMe" className="nav_options">ABOUT ME</Link>
               </li>
               <li>
                 <a className="nav_options" href="#">

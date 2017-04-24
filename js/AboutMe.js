@@ -9,10 +9,16 @@ export default React.createClass({
   },
   render(){
   return (
-    <section className="services_window_display">
-      <p className="services_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+    <div>
+      <section className="page2_left_area">
+        <h1 className="page2_name_title" style={{marginTop: "2em"}}>Johnny Ramirez</h1>
+        <h2 className="title_army">MAJOR, US ARMY RETIRED</h2>
+        <p className="page2_text">I am very proud of my service in the US Marine Corps and US Army. As a successful Real Estate Entrepreneur-my #1 objective is to help families achieve their real estate goals in selling or buying their home. </p>
+        <p className="page2_text">With that said, not all real estate agents are created equal.</p>
+        <p className="page2_text">I have aligned myself with some of the most successful experts in the real estate industry in San Antonio to help me to provide the best resources for my clients. I am a no nonsense business professional who will always put the needs of my clients first and foremost.</p>
+      </section>
+      <img className="johnny_portait" src="/styles/Johnny_Portrait.jpg"/>
+    </div>
     )
   }
 })

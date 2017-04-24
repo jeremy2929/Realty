@@ -4,6 +4,8 @@ import {Router, Route, hashHistory} from "react-router"
 import App from "./App"
 import Home from "./Home"
 import Services from "./Services"
+import AboutMe from './AboutMe'
+
 
 render(
   (
@@ -11,6 +13,7 @@ render(
       <Route component={ App }>
         <Route path="/" component={ Home }/>
         <Route path="/Services" component={Services}/>
+        <Route path="/AboutMe" component={AboutMe}/>
       </Route>
     </Router>
   ),
