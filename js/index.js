@@ -5,6 +5,7 @@ import App from "./App"
 import Home from "./Home"
 import Services from "./Services"
 import AboutMe from './AboutMe'
+import ContactMe from './ContactMe'
 
 
 render(
@@ -14,6 +15,7 @@ render(
         <Route path="/" component={ Home }/>
         <Route path="/Services" component={Services}/>
         <Route path="/AboutMe" component={AboutMe}/>
+        <Route path="/ContactMe" component={ContactMe}/>
       </Route>
     </Router>
   ),

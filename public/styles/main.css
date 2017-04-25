@@ -221,7 +221,7 @@ nav {
   padding-top: 1em;
   text-decoration: none;
   text-align: center;
-  width: 7em;
+  width: 6.5em;
 }
 
 .nav_options:hover{
@@ -237,15 +237,35 @@ nav {
 .services_window_display{
   background-color: lightgrey;
   display: inline-block;
-  top: 0;
-  left: 0;
-  height: 40em;
+  font-size: 1em;
+  height: 60em;
+  margin: 0 auto;
   width: 100%;
   z-index: 100;
 }
 
-.services_text{
+.services_title{
+  font-family: 'Open Sans', sans-serif;
   font-size: 2em;
+  text-align: center;
+}
+
+.services_text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin-top: 3em;
+  text-indent: 1em;
+  text-align: center;
+  /*width: 80%;*/
+}
+
+.services_johnny_portait{
+  display: block;
+  border: groove 2px;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 0 auto;
+
+  /*display: inline-block;*/
 }
 
 .fixed {
@@ -308,10 +328,18 @@ nav {
 }
 
 .page2_right_area{
+  /*border: solid 2px;*/
   display: inline-block;
   margin: 0;
   margin-left: 10em;
-  width: 40%;
+  width: 41%;
+}
+
+.allCity_image_right{
+  display: inline-block;
+  height: 8em;
+  float: right;
+  width: 8em;
 }
 
 .page2_agent_right {
@@ -372,6 +400,7 @@ nav {
   width: 5em;
 }
 
+/* AboutMe start *******************/
 .title_army{
   color: lightgrey;
   padding: 0;
@@ -387,3 +416,57 @@ nav {
   margin-left: 8em;
   margin-top: 2em;
 }
+/* AboutMe end *******************/
+
+/* ContactMe start *******************/
+.contact_page{
+  background-color: lightgrey;
+  height: 40em;
+  /*margin-left: 25em;*/
+  width: 100%;
+
+}
+
+
+.contact_info{
+  display: inline-block;
+  color: black;
+  float: left;
+  font-family: 'NTR', sans-serif;
+  margin-left: 8em;
+  /*vertical-align: top;*/
+}
+
+.contact_name_title{
+  /*display: inline-block;*/
+
+  /*display: block;*/
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  /*margin: 0 auto;*/
+  margin-bottom: 1em;
+  text-align: center;
+  /*width: auto;*/
+}
+
+.contact_detail{
+  /*display: inline-block;*/
+  font-size: 1.5em;
+  margin: 0;
+  width: 10em;
+}
+
+
+.contact_johnny_portait{
+  border: groove 2px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-left: 10em;
+  margin-top: 3em;
+  /*top: 3em;
+  left: 5em;*/
+  /*float: right;
+  vertical-align: top;*/
+  /*float: right;*/
+}
+/* ContactMe end *******************/

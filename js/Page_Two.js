@@ -3,6 +3,9 @@ import { Link } from "react-router"
 // import Services from './Services'
 // import AboutMe from './AboutMe'
 
+
+// <img className="allCity_image_right" src="/styles/allCity_image.jpg"/>
+
 export default React.createClass({
   render(){
   return (
@@ -31,9 +34,7 @@ export default React.createClass({
                 <Link to="/AboutMe" className="nav_options">ABOUT ME</Link>
               </li>
               <li>
-                <a className="nav_options" href="#">
-                  CONTACT
-                </a>
+                  <Link to="/ContactMe" className="nav_options">CONTACT ME</Link>
               </li>
             </ul>
         </article>
@@ -49,12 +50,28 @@ export default React.createClass({
         </section>
         <aside className="page2_right_area">
           <h1 className="page2_name_title">All City Real Estate</h1>
-          <p className="page2_contact_text">
-                                    210-884-5873
-                                    jrramirez65@gmail.com
-                                    1111 Austin Hwy
-                                    San Antonio, TX 78209
-                                    state license:  #609589</p>
+          <div>
+            <table className="contact_info">
+              <tbody >
+                <tr>
+                  <th className="contact_detail">MAIN:</th>
+                  <td className="contact_detail">210-884-5873</td>
+                </tr>
+                <tr>
+                  <th className="contact_detail">EMAIL:</th>
+                  <td className="contact_detail">jrramirez65@gmail.com</td>
+                </tr>
+                <tr>
+                  <th className="contact_detail">ADDRESS:</th>
+                  <td className="contact_detail">
+                    1111 Austin Hwy
+                    <br/>
+                    San Antonio, TX 78209
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <img className="page2_agent_right" src="/styles/agent.jpg"/>
           <div className="page2_contact_area">
             <h1 className="page2_contact_title">Or, simply enter your information and we will contact you:</h1>
