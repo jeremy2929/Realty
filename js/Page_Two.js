@@ -1,44 +1,58 @@
 import React from "react"
 import { Link } from "react-router"
+import NavBar from './NavBar'
+
 // import Services from './Services'
 // import AboutMe from './AboutMe'
 
+// <table className="contact_info">
+//   <tbody >
+//     <tr>
+//       <th className="contact_detail">MAIN:</th>
+//       <td className="contact_detail">210-884-5873</td>
+//     </tr>
+//     <tr>
+//       <th className="contact_detail">EMAIL:</th>
+//       <td className="contact_detail">jrramirez65@gmail.com</td>
+//     </tr>
+//     <tr>
+//       <th className="contact_detail">ADDRESS:</th>
+//       <td className="contact_detail">
+//         1111 Austin Hwy
+//         <br/>
+//         San Antonio, TX 78209
+//       </td>
+//     </tr>
+//   </tbody>
+// </table>
 
-// <img className="allCity_image_right" src="/styles/allCity_image.jpg"/>
+// <a className="fa fa-facebook fa-3x" href="#">
+// <i  aria-hidden="true"></i>
+// <img className="facebook" src="/styles/facebook.png"/>
+  // <img className="facebook" ref="facebookImage" src="/styles/facebook.png" onMouseOver={this.hoverOnFacebook}/>
+
 
 export default React.createClass({
+  getInitialState(){
+    return {
+      imgSrc: '/styles/facebook.png'
+    }
+  },
+   handleMouseOver() {
+     this.setState({
+       imgSrc: '/styles/facebook_name.png'
+     })
+   },
+   handleMouseOut() {
+     this.setState({
+       imgSrc: '/styles/facebook.png'
+     })
+   },
   render(){
   return (
     <div id="Page2" className="page2_wrapper">
       <article className="nav_placeholder"></article>
-      <nav className="nav_wrapper">
-        <article className="nav_left">
-          <h1 className="nav_name_left">Johnny Ramirez</h1>
-        </article>
-        <article className="nav_middle">
-          <a className="fa fa-facebook fa-3x" href="#">
-            <i  aria-hidden="true"></i>
-          </a>
-        </article>
-        <article className="nav_right">
-            <ul className="nav_content_right">
-              <li>
-                <a className="nav_options" href="#">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <Link to="/Services" className="nav_options">SERVICES</Link>
-              </li>
-              <li>
-                <Link to="/AboutMe" className="nav_options">ABOUT ME</Link>
-              </li>
-              <li>
-                  <Link to="/ContactMe" className="nav_options">CONTACT ME</Link>
-              </li>
-            </ul>
-        </article>
-      </nav>
+      <NavBar/>
       <div className="page2_wrapper_content" ref="page2">
         <section className="page2_left_area">
           <h1 className="page2_name_title">Johnny Ramirez</h1>
@@ -51,28 +65,34 @@ export default React.createClass({
         <aside className="page2_right_area">
           <h1 className="page2_name_title">All City Real Estate</h1>
           <div>
-            <table className="contact_info">
+            <table className="page2_contact_info">
               <tbody >
                 <tr>
-                  <th className="contact_detail">MAIN:</th>
+                  <th className="contact_detail">main:</th>
                   <td className="contact_detail">210-884-5873</td>
                 </tr>
                 <tr>
-                  <th className="contact_detail">EMAIL:</th>
-                  <td className="contact_detail">jrramirez65@gmail.com</td>
+                  <th className="contact_detail">email:</th>
+                  <td className="contact_detail">
+                    <a href="mailto:jrramirez65@gmail.com" data-rel="external">jrramirez65@gmail.com</a>
+                  </td>
                 </tr>
                 <tr>
-                  <th className="contact_detail">ADDRESS:</th>
-                  <td className="contact_detail">
+                  <th className="contact_detail" style={{verticalAlign: "top"}}>address:</th>
+                  <td className="contact_detail" style={{lineHeight: "1em"}}>
                     1111 Austin Hwy
-                    <br/>
+                    <br />
                     San Antonio, TX 78209
                   </td>
+                </tr>
+                <tr>
+                  <th className="contact_detail">state license #</th>
+                  <td className="contact_detail">609589</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <img className="page2_agent_right" src="/styles/agent.jpg"/>
+          <img className="page2_agent_right" src="/styles/facebook_house.jpg"/>
           <div className="page2_contact_area">
             <h1 className="page2_contact_title">Or, simply enter your information and we will contact you:</h1>
             <div className="page2_contact_buttons">
@@ -83,11 +103,6 @@ export default React.createClass({
           </div>
         </aside>
       </div>
-        <div id="Services" className="services_window_hidden" ref="services">
-          <article className="nav_placeholder"></article>
-          <p className="services_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
     </div>
   )
 }

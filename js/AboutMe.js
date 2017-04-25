@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { Link } from "react-router"
-import $ from 'jquery'
+import NavBar from './NavBar'
 
 export default React.createClass({
   componentDidUpdate() {
@@ -10,6 +10,7 @@ export default React.createClass({
   render(){
   return (
     <div>
+      <NavBar/>
       <section className="page2_left_area">
         <h1 className="page2_name_title" style={{marginTop: "2em"}}>Johnny Ramirez</h1>
         <h2 className="title_army">MAJOR, US ARMY RETIRED</h2>
