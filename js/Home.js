@@ -3,11 +3,12 @@ import $ from 'jquery'
 import Page_Two from './Page_Two'
 
 
+
 $(document).ready(function() {
   //Calculate the height of <header>
   //Use outerHeight() instead of height() if have padding
   var aboveHeight = $('header').outerHeight();
-  var aboveHeight = 640
+  var aboveHeight = 623
   //when scroll
   $(window).scroll(function(){
     //if scrolled down more than the header’s height
@@ -26,19 +27,25 @@ $(document).ready(function() {
   })
 })
 
-
 export default React.createClass({
+  DownClick(){
+    var element = document.getElementById("Page2")
+    // var alignWithTop = true
+    element.scrollIntoView({behavior: "smooth"})
+  },
   render(){
   return (
     <div>
       <div className="outer-container">
         <div className="inner-container">
           <div className="video-overlay">
-            <h1 className="main_title">First Last</h1>
+            <h1 className="main_title">Johnny Ramirez</h1>
+            <h2 className="main_subtitle">Finding your next home...</h2>
             <button className="left_button">A Button</button>
             <button className="right_button">B Button</button>
+            <button className="down_button" onClick={this.DownClick}>&#8595;</button>
           </div>
-          <video id="player" src="/styles/movie.mp4" autoPlay></video>
+          <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
         </div>
       </div>
       <Page_Two/>
