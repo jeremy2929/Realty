@@ -66,7 +66,7 @@ export default React.createClass({
           <h1 className="page2_name_title">All City Real Estate</h1>
           <div>
             <table className="page2_contact_info">
-              <tbody >
+              <tbody>
                 <tr>
                   <th className="contact_detail">main:</th>
                   <td className="contact_detail">210-884-5873</td>
@@ -78,7 +78,7 @@ export default React.createClass({
                   </td>
                 </tr>
                 <tr>
-                  <th className="contact_detail" style={{verticalAlign: "top"}}>address:</th>
+                  <th className="contact_detail">address:</th>
                   <td className="contact_detail" style={{lineHeight: "1em"}}>
                     1111 Austin Hwy
                     <br />

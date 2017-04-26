@@ -26,11 +26,35 @@ import { Link } from "react-router"
 //   })
 // })
 
+// <a className="nav_options" href="#">
+//   HOME
+  // <Link to="/Services" className="nav_options">SERVICES</Link>
+  // <Link to="/AboutMe" className="nav_options">ABOUT ME</Link>
+  // <Link to="/ContactMe" className="nav_options">CONTACT ME</Link>
+
+
+
 export default React.createClass({
   getInitialState(){
     return {
       imgSrc: '/styles/facebook.png'
     }
+  },
+  onClickHome(){
+    this.props.onClickHome()
+  //  this.refs.services.className = "hidden"
+  },
+  onClickServices(){
+    this.props.onClickServices()
+  //  this.refs.services.className = "hidden"
+  },
+  onClickAboutMe(){
+    this.props.onClickAboutMe()
+  //  this.refs.services.className = "hidden"
+  },
+  onClickContactMe(){
+    this.props.onClickContactMe()
+  //  this.refs.services.className = "hidden"
   },
    handleMouseOver() {
      this.setState({
@@ -56,18 +80,16 @@ export default React.createClass({
         <article className="nav_right">
             <ul className="nav_content_right">
               <li>
-                <a className="nav_options" href="#">
-                  HOME
-                </a>
+                  <a className="nav_options" onClick={this.onClickHome}>HOME</a>
               </li>
               <li>
-                <Link to="/Services" className="nav_options">SERVICES</Link>
+                <a className="nav_options" onClick={this.onClickServices}>SERVICES</a>
               </li>
               <li>
-                <Link to="/AboutMe" className="nav_options">ABOUT ME</Link>
+                <a className="nav_options" onClick={this.onClickAboutMe}>ABOUT ME</a>
               </li>
               <li>
-                <Link to="/ContactMe" className="nav_options">CONTACT ME</Link>
+                <a className="nav_options" onClick={this.onClickContactMe}>CONTACT ME</a>
               </li>
             </ul>
         </article>
