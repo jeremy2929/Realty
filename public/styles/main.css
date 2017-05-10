@@ -4,7 +4,7 @@
 
 body{
   background-color: dimgrey;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   margin: 0;
 }
@@ -17,13 +17,12 @@ body{
   position: fixed; // optional depending on what you want
 }
 
-.main_wrapper_hidden{
+.hidden{
   display: none;
 }
 
 .main_wrapper{
-  border: solid 2px;
-  margin-top: 0;
+  margin-top: 2em;
   display: inline-block;
 }
 
@@ -47,33 +46,37 @@ body{
   width: 10em;
 }
 
-.outer-container {
-  height: 90vh;
+.outer_container {
+  height: 91vh;
   text-align: center;
   padding: 0;
   width: 100%;
 }
 
-.inner-container {
+.inner_container {
 
 }
 
-.video-overlay {
+.video_overlay {
   display: block;
   position: absolute;
   font-size: 2em;
   font-family: Helvetica;
   color: #FFF;
+  height: 90vh;
   margin: 0 auto;
-  /*margin-top: 3em;*/
+  margin-top: 5em;
   margin-top: 0;
   width: 100%;
   z-index: 2;
 }
 
-video {
-  width: 100%;
-  height: 44.2em;
+.home_video {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 .left_button{
@@ -95,35 +98,15 @@ video {
   width: 10em;
 }
 
-.connect_mlsidx{
+.connect_mlsidx {
   display: block;
-  height: 100%;
+  height: 200px;
   margin: 0 auto;
   margin-top: .5em;
   width: 100%;
 }
 
-/* second page start ----------*/
 /* nav bar start----------------*/
-#wrapper {
-  height: 10em;
-  width: 100%x;
-}
-
-.page2_wrapper{
-  background-image: url("/styles/hood.jpg");
-  margin: 0;
-}
-
-header {
-  text-align:center;
-}
-
-.nav_placeholder{
-  height: 0px;
-  width: 100%;
-}
-
 .nav_placeholder_grow{
   border: solid 2px;
   background-color: red;
@@ -220,6 +203,18 @@ nav {
   height: 100%;
   transition: .5s;
 }
+/* nav bar stop----------------*/
+
+.popup_window{
+  background-color: lightgrey;
+  display: inline-block;
+  color: black;
+  height: 15em;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 80%;
+  z-index: 100;
+}
 
 .close_x{
   background: transparent;
@@ -229,20 +224,7 @@ nav {
   width: 1em;
 }
 
-.services_page_hidden{
-  display: none;
-}
-
-.services_page{
-  background-color: lightgrey;
-  display: inline-block;
-  color: black;
-  height: 15em;
-  margin: 0 auto;
-  width: 80%;
-  z-index: 100;
-}
-
+/* services start *******************/
 .services_title{
   color: royalblue;
   font-family: 'Open Sans', sans-serif;
@@ -269,21 +251,10 @@ nav {
   margin: 0 auto;
   height: 10em;
 }
+/* services end *******************/
 
-.aboutMe_page_hidden{
-  display: none;
-}
 
-.aboutMe_page{
-  background-color: lightgrey;
-  display: inline-block;
-  color: black;
-  height: 15em;
-  margin: 0 auto;
-  width: 80%;
-  z-index: 100;
-}
-
+/* AboutMe start *******************/
 .aboutMe_name_title{
   color: royalblue;
   font-family: 'Open Sans', sans-serif;
@@ -316,7 +287,9 @@ nav {
   margin: 0 auto;
   height: 10em;
 }
+/* AboutMe end *******************/
 
+/* ContactMe start *******************/
 .contactMe_page_hidden{
   display: none;
 }
@@ -352,171 +325,33 @@ nav {
 
 .contactMe_detail{
   font-size: 1.5em;
-  /*height: auto;*/
   margin: 0;
   width: 9em;
+}
+
+.contactMe_email{
+  text-decoration: none;
 }
 
 .contactMe_allCity_image{
   border: solid 1px;
   float: left;
-  height: 10em;
-  /*margin: 0 auto;*/
+  height: 50%;
   margin-left: 1em;
   margin-top: 1em;
-  width: 10em;
+  width: 25%;
 }
 
 .contactMe_johnny_portait{
   border: groove 5px;
   box-shadow: 10px 10px 5px #888888;
-  height: 10em;
-  /*margin-left: 10em;*/
+  height: 50%;
   margin-top: 1em;
 }
+/* ContactMe end *******************/
 
-.fixed {
-  position: fixed;
-}
-/* nav bar stop----------------*/
 
-.page2_wrapper_content{
-    margin-top: 0em;
-}
 
-.page2_wrapper_content_hidden{
-    display: none;
-}
-
-.page2_left_area{
-  display: inline-block;
-  margin-left: 2em;
-  margin-right: 0;
-  margin-top: 0;
-  width: 40%;
-  vertical-align: top;
-}
-
-.page2_name_title{
-  color: teal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.page2_text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0;
-  margin-bottom: 1em;
-  text-indent: 1em;
-}
-
-.page2_contact_text{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  width: 10em;
-}
-
-.page2_image_box{
-  background-color: lightgrey;
-  border: groove 2px;
-  box-shadow: 10px 10px 5px #888888;
-  display: inline-block;
-  height: 10em;
-  margin-left: 2em;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  width: 12em;
-}
-
-.page2_right_area{
-  /*border: solid 2px;*/
-  display: inline-block;
-  margin: 0;
-  margin-left: 5em;
-  width: 41%;
-}
-
-.page2_contact_info{
-  /*border: solid 2px;*/
-  display: inline-block;
-  color: black;
-  float: left;
-  font-family: 'NTR', sans-serif;
-  /*margin-left: 3em;*/
-}
-
-/*.allCity_image_right{
-  display: inline-block;
-  height: 8em;
-  float: right;
-  width: 8em;
-}*/
-
-.page2_agent_right {
-  border: outset grey 3px;
-  box-shadow: 10px 10px 5px #888888;
-  height: 20em;
-  width: 35em;
-}
-
-.page2_contact_area {
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 100%;
-  text-align: center;
-}
-
-.page2_contact_title {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0;
-}
-
-.page2_contact_buttons{
-  display:inline-flex;
-}
-
-.page2_contact_input {
-  background-color: white;
-  border: darkslategrey solid 1px;
-  font-size: 1em;
-  height: 1.4em;
-  margin-left: .2em;
-  text-align: center;
-  padding-left: .2em;
-  width: 10em;
-}
-
-.page2_contact_submit{
-  /* IE10+ */
-  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Mozilla Firefox */
-  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Opera */
-  background-image: -o-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #F5F5F5), color-stop(100, #AFB0BD));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* W3C Markup */
-  background-image: radial-gradient(ellipse farthest-corner at center, #F5F5F5 0%, #AFB0BD 100%);
-  /*background-color: silver;*/
-  border: darkslategrey solid 1px;
-  font-weight: 900;
-  height: 2em;
-  margin-left: .3em;
-  width: 5em;
-}
-
-/* AboutMe start *******************/
 .title_army{
   color: grey;
   padding: 0;
@@ -532,11 +367,27 @@ nav {
   margin-left: 8em;
   margin-top: 2em;
 }
-/* AboutMe end *******************/
 
-/* ContactMe start *******************/
-/* ContactMe end *******************/
 
 @media only screen
-  and (min-device-width : 1281px)
-  and (max-device-width : 1500px) {
+  and (min-device-width : 200px)
+  and (max-device-width : 1151px) {
+
+    .main_wrapper{
+      margin-top: 0;
+    }
+
+    .popup_window{
+      font-size: .9em;
+      height: 14em;
+      margin-top: 1em;
+    }
+
+    .home_video {
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 1000px;
+      height:100%;
+    }
+}

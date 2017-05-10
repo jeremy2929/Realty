@@ -1,52 +1,49 @@
 import React from 'react'
-import $ from 'jquery'
 import NavBar from './NavBar'
 
 export default React.createClass({
   onClickHome(){
-    this.refs.services.className="services_page_hidden"
-    this.refs.aboutMe.className="aboutMe_page_hidden"
-    this.refs.contactMe.className="contactMe_page_hidden"
+    this.refs.services.className="hidden"
+    this.refs.aboutMe.className="hidden"
+    this.refs.contactMe.className="hidden"
     this.refs.mainWrapper.className="main_wrapper"
   },
   onClickServices(){
-    this.refs.services.className="services_page"
-    this.refs.aboutMe.className="aboutMe_page_hidden"
-    this.refs.contactMe.className="contactMe_page_hidden"
-    this.refs.mainWrapper.className="main_wrapper_hidden"
+    this.refs.services.className="popup_window"
+    this.refs.aboutMe.className="hidden"
+    this.refs.contactMe.className="hidden"
+    this.refs.mainWrapper.className="hidden"
   },
   mainServicesDisplay(){
-    this.refs.services.className="services_page_hidden"
+    this.refs.services.className="hidden"
     this.refs.mainWrapper.className="main_wrapper"
   },
   onClickAboutMe(){
-    this.refs.aboutMe.className="aboutMe_page"
-    this.refs.services.className="services_page_hidden"
-    this.refs.contactMe.className="contactMe_page_hidden"
-    this.refs.mainWrapper.className="main_wrapper_hidden"
+    this.refs.aboutMe.className="popup_window"
+    this.refs.services.className="hidden"
+    this.refs.contactMe.className="hidden"
+    this.refs.mainWrapper.className="hidden"
   },
   mainAboutMeDisplay(){
-    this.refs.aboutMe.className="aboutMe_page_hidden"
+    this.refs.aboutMe.className="hidden"
     this.refs.mainWrapper.className="main_wrapper"
   },
   onClickContactMe(){
-    this.refs.contactMe.className="contactMe_page"
-    this.refs.services.className="services_page_hidden"
-    this.refs.aboutMe.className="aboutMe_page_hidden"
-    this.refs.mainWrapper.className="main_wrapper_hidden"
+    this.refs.contactMe.className="popup_window"
+    this.refs.services.className="hidden"
+    this.refs.aboutMe.className="hidden"
+    this.refs.mainWrapper.className="hidden"
   },
   mainContactMeDisplay(){
-    this.refs.contactMe.className="contactMe_page_hidden"
+    this.refs.contactMe.className="hidden"
     this.refs.mainWrapper.className="main_wrapper"
   },
-  // <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
-
   render(){
   return (
     <div>
-      <div className="outer-container">
-        <div className="inner-container">
-          <div className="video-overlay">
+      <div className="outer_container">
+        <div className="inner_container">
+          <div className="video_overlay">
             <section className="main_wrapper" ref="mainWrapper">
               <h1 className="main_title">Johnny Ramirez</h1>
               <h2 className="main_subtitle">Finding your next home...</h2>
@@ -54,7 +51,7 @@ export default React.createClass({
               <button className="right_button">B Button</button>
             <iframe className='connect_mlsidx' src='http://sabor-idx.connectmls.com/idx/spr/4EAD01484EE316ECE0537401020AAD47/search'></iframe>
             </section>
-            <section className="services_page_hidden" ref="services">
+            <section className="hidden" ref="services">
               <div>
                 <img className="close_x" src="/styles/close.png" onClick={this.mainServicesDisplay}/>
                 <h1 className="services_title">Services</h1>
@@ -65,7 +62,7 @@ export default React.createClass({
               </div>
               <img className="services_johnny_portait" src="/styles/Johnny_Portrait.jpg"/>
             </section>
-            <section className="aboutMe_page_hidden" ref="aboutMe">
+            <section className="hidden" ref="aboutMe">
                 <img className="close_x" src="/styles/close.png" onClick={this.mainAboutMeDisplay}/>
                 <h1 className="aboutMe_name_title">Johnny Ramirez</h1>
                 <h2 className="aboutMe_army">MAJOR, US ARMY RETIRED</h2>
@@ -74,7 +71,7 @@ export default React.createClass({
                 <p className="aboutMe_text">I have aligned myself with some of the most successful experts in the real estate industry in San Antonio to help me to provide the best resources for my clients. I am a no nonsense business professional who will always put the needs of my clients first and foremost.</p>
               <img className="aboutMe_johnny_portait" src="/styles/Johnny_Portrait.jpg"/>
             </section>
-            <section className="contactMe_page_hidden" ref="contactMe">
+            <section className="hidden" ref="contactMe">
               <img className="close_x" src="/styles/close.png" onClick={this.mainContactMeDisplay}/>
               <h1 className="contactMe_name_title">Johnny Ramirez</h1>
               <img className="contactMe_allCity_image" src="/styles/allCity_image.jpg"/>
@@ -87,7 +84,7 @@ export default React.createClass({
                   <tr>
                     <th className="contactMe_detail">email:</th>
                     <td className="contactMe_detail">
-                      <a href="mailto:jrramirez65@gmail.com" data-rel="external">jrramirez65@gmail.com</a>
+                      <a className="contactMe_email" href="mailto:jrramirez65@gmail.com" data-rel="external">jrramirez65@gmail.com</a>
                     </td>
                   </tr>
                   <tr>
@@ -108,6 +105,7 @@ export default React.createClass({
             </section>
           </div>
         </div>
+        <video className="home_video" id="player" src="/styles/movie.mp4" autoPlay loop></video>
       </div>
       <NavBar onClickHome={this.onClickHome}
               onClickServices={this.onClickServices}
