@@ -3,7 +3,8 @@
 }
 
 body{
-  height: 40em;
+  background-color: dimgrey;
+  height: 90vh;
   width: 100%;
   margin: 0;
 }
@@ -21,8 +22,9 @@ body{
 }
 
 .main_wrapper{
+  border: solid 2px;
+  margin-top: 0;
   display: inline-block;
-
 }
 
 .main_title {
@@ -46,8 +48,9 @@ body{
 }
 
 .outer-container {
-  height: 39.1em;
+  height: 90vh;
   text-align: center;
+  padding: 0;
   width: 100%;
 }
 
@@ -62,7 +65,8 @@ body{
   font-family: Helvetica;
   color: #FFF;
   margin: 0 auto;
-  margin-top: 3em;
+  /*margin-top: 3em;*/
+  margin-top: 0;
   width: 100%;
   z-index: 2;
 }
@@ -91,23 +95,6 @@ video {
   width: 10em;
 }
 
-.down_button{
-  background-color: Transparent;
-  color: white;
-  display: block;
-  font-size: .5em;
-  height: 3em;
-  margin: 0 auto;
-  margin-top: 1em;
-  outline: 0;
-  width: 3em;
-  -moz-border-radius: 50px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .connect_mlsidx{
   display: block;
   height: 100%;
@@ -119,7 +106,7 @@ video {
 /* second page start ----------*/
 /* nav bar start----------------*/
 #wrapper {
-  height: 20em;
+  height: 10em;
   width: 100%x;
 }
 
@@ -147,7 +134,7 @@ header {
 
 nav {
   background: lightgrey;
-  height: 82px;
+  height: 62px;
   width: 99.55%;
   margin-left: .5em;
   top: 0;
@@ -158,7 +145,7 @@ nav {
   display: inline-flex;
   margin: 0;
   margin-left: .2em;
-  height: 82px;
+  height: 62px;
 }
 
 .nav_left{
@@ -200,7 +187,7 @@ nav {
   margin: 0 auto;
   height: 100%;
   padding: 0;
-  padding-top: .4em;
+  padding-top: .2em;
   text-align: center;
   width: 50%;
   white-space: pre;
@@ -213,26 +200,24 @@ nav {
   margin-left: 0em;
   padding: 0;
   margin-top: 0;
-  height: 5em;
+  height: 100%;
   width: 70%;
 }
 
 .nav_options{
-  display: inline-block;
-  color: white;
+  display: block;
   font-family: 'NTR', sans-serif;
-  font-size: 1.3em;
-  height: 102%;
-  margin: 0 auto;
-  padding-top: 1em;
-  text-decoration: none;
+  height: 100%;
+  padding-top: 2vh;
   text-align: center;
-  width: 6.5em;
+  vertical-align: middle;
+  width: 11vw;
 }
 
 .nav_options:hover{
   background-color: white;
   color: black;
+  height: 100%;
   transition: .5s;
 }
 
@@ -284,7 +269,6 @@ nav {
   margin: 0 auto;
   height: 10em;
 }
-
 
 .aboutMe_page_hidden{
   display: none;
@@ -552,3 +536,7 @@ nav {
 
 /* ContactMe start *******************/
 /* ContactMe end *******************/
+
+@media only screen
+  and (min-device-width : 1281px)
+  and (max-device-width : 1500px) {

@@ -3,11 +3,6 @@ import $ from 'jquery'
 import NavBar from './NavBar'
 
 export default React.createClass({
-  DownClick(){
-    var element = document.getElementById("Page2")
-    // var alignWithTop = true
-    element.scrollIntoView({behavior: "smooth"})
-  },
   onClickHome(){
     this.refs.services.className="services_page_hidden"
     this.refs.aboutMe.className="aboutMe_page_hidden"
@@ -44,6 +39,8 @@ export default React.createClass({
     this.refs.contactMe.className="contactMe_page_hidden"
     this.refs.mainWrapper.className="main_wrapper"
   },
+  // <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
+
   render(){
   return (
     <div>
@@ -55,7 +52,6 @@ export default React.createClass({
               <h2 className="main_subtitle">Finding your next home...</h2>
               <button className="left_button">A Button</button>
               <button className="right_button">B Button</button>
-              <button className="down_button" onClick={this.DownClick}>&#8595;</button>
             <iframe className='connect_mlsidx' src='http://sabor-idx.connectmls.com/idx/spr/4EAD01484EE316ECE0537401020AAD47/search'></iframe>
             </section>
             <section className="services_page_hidden" ref="services">
@@ -111,7 +107,6 @@ export default React.createClass({
               <img className="contactMe_johnny_portait" src="/styles/Johnny_Portrait.jpg"/>
             </section>
           </div>
-          <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
         </div>
       </div>
       <NavBar onClickHome={this.onClickHome}
