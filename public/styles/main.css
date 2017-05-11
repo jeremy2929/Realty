@@ -227,6 +227,15 @@ nav {
   width: 1em;
 }
 
+
+.johnny_portrait{
+  display: block;
+  border: groove 5px;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 0 auto;
+  height: 10em;
+}
+
 /* services start *******************/
 .services_title{
   color: royalblue;
@@ -245,14 +254,6 @@ nav {
   margin-left: 3em;
   text-indent: 1em;
   width: 50%;
-}
-
-.services_johnny_portait{
-  display: block;
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin: 0 auto;
-  height: 10em;
 }
 /* services end *******************/
 
@@ -281,14 +282,6 @@ nav {
   margin-left: 1em;
   text-indent: 1em;
   width: 50%;
-}
-
-.aboutMe_johnny_portait{
-  display: block;
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin: 0 auto;
-  height: 10em;
 }
 /* AboutMe end *******************/
 
@@ -344,33 +337,7 @@ nav {
   margin-top: 1em;
   width: 25%;
 }
-
-.contactMe_johnny_portait{
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  height: 50%;
-  margin-top: 1em;
-}
 /* ContactMe end *******************/
-
-
-
-.title_army{
-  color: grey;
-  padding: 0;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  margin-top: 2em;
-  text-align: center;
-}
-
-.johnny_portait{
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin-left: 8em;
-  margin-top: 2em;
-}
-
 
 @media only screen
   and (min-device-width : 200px)
