@@ -49,7 +49,9 @@ export default React.createClass({
               <h2 className="main_subtitle">Finding your next home...</h2>
               <button className="left_button">A Button</button>
               <button className="right_button">B Button</button>
-            <iframe className='connect_mlsidx' src='http://sabor-idx.connectmls.com/idx/spr/4EAD01484EE316ECE0537401020AAD47/search'></iframe>
+            <div className="container_idx">
+              <iframe className='connect_mlsidx' src='http://sabor-idx.connectmls.com/idx/spr/4EAD01484EE316ECE0537401020AAD47/search'></iframe>
+            </div>
             </section>
             <section className="hidden" ref="services">
               <div>

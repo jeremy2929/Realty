@@ -98,11 +98,14 @@ body{
   width: 10em;
 }
 
-.connect_mlsidx {
+.container_idx{
   display: block;
-  height: 200px;
+  height: auto;
   margin: 0 auto;
   margin-top: .5em;
+}
+
+.connect_mlsidx {
   width: 100%;
 }
 
